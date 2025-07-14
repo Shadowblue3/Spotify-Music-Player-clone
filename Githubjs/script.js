@@ -146,7 +146,9 @@ async function displayAlbums() {
 }
 
 async function main() {
-    await getSongs("songs/Mixed")
+    
+    await getSongs(__dirname + "/songs/Mixed")
+    
     let s = songFormat(0)
 
     playMusic(s, true)
