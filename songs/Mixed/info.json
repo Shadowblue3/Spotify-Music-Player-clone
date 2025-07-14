@@ -1,4 +1,13 @@
 {
     "title" : "Another Mix",
-    "description" : "Just have fun"
+    "description" : "Just have fun",
+    "songs": [
+        "Saiyaara-Sohali Sen, Mohit Chauhan.mp3",
+        "Sapphire-Ed Sherran, Arijit Singh.mp3",
+        "Sanam Re-Arijit Singh.mp3",
+        "Suzume-Toaka.mp3",
+        "Shape Of You-Ed Sherran.mp3",
+        "Cheques-by Shubh.mp3",
+        "Despacito-Luis Fonsi.mp3"
+    ]
 }
