@@ -60,10 +60,13 @@ async function getSongs(folder) {
 
 function playMusic(track, pause = false) {
   currentSongs.src = `${currFolder}/${track}`;
-  if (!pause) {
-    currentSongs.play();
-    play.src = "img/pause.svg";
-  }
+  
+   currentSongs.onloadeddata = () => {
+    if (!pause) {
+      currentSongs.play().catch((e) => console.error("Playback error:", e));
+      play.src = "img/pause.svg";
+    }
+  };
   document.querySelector(".songInfo").innerHTML = track.replace(".mp3", "");
 }
 
