@@ -59,15 +59,21 @@ async function getSongs(folder) {
 }
 
 function playMusic(track, pause = false) {
+  currentSongs.pause(); // stop previous audio first
   currentSongs.src = `${currFolder}/${track}`;
-  
-   currentSongs.onloadeddata = () => {
+
+  // Wait for metadata (duration, etc.) to be loaded
+  currentSongs.onloadedmetadata = async () => {
     if (!pause) {
-      currentSongs.play().catch((e) => console.error("Playback error:", e));
-      play.src = "img/pause.svg";
+      try {
+        await currentSongs.play();
+        play.src = "img/pause.svg";
+      } catch (err) {
+        console.error("Autoplay failed:", err);
+      }
     }
+    document.querySelector(".songInfo").innerHTML = track.replace(".mp3", "");
   };
-  document.querySelector(".songInfo").innerHTML = track.replace(".mp3", "");
 }
 
 async function displayAlbums() {
