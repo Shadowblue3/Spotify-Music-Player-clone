@@ -1,4 +1,11 @@
 {
     "title": "Just Chillin",
-    "description": "Just chill for a moment in life"
+    "description": "Just chill for a moment in life",
+    "songs": [
+        "Counting Stars-One Replublic.mp3",
+        "Gone Gone Gone-Phillips Phillips.mp3",
+        "Hall of Fame-The Scripts.mp3",
+        "Heat Waves-Glass Animals.mp3",
+        "Let Me down Slowly-Alec Benjamin.mp3"
+    ]
 }
