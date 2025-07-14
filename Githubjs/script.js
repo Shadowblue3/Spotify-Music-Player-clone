@@ -3,6 +3,7 @@ let songs;
 let currFolder;
 
 function songFormat(index) {
+    console.log(songs)
     tempSongs = []
     for (let i = 0; i < songs.length; i++) {
         if (songs[i].includes(".mp3")) {
