@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<title>Spotify - Web Player: Music for everyone</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/utility.css">
+</head>
+
+<body>
+    <div class="header flex">
+
+        <div class="left">
+            <img class="invert" width="50px" src="img/logo.svg" alt="">
+            <div class="hamburger invert">
+                <img width="50px" src="img/hamburger.svg" alt="">
+            </div>
+            <div class="btn">
+                <button>
+                    <img class="invert" src="img/home.svg" alt="">
+                </button>
+            </div>
+            <div class="searchBtn">
+                <button>
+                    <span class="cont1 flex item-center">
+                        <img width="32px" src="img/search.svg" alt="">
+                        <p>What do you want to play?</p>
+                    </span>
+                    <span class="cont2">
+                        <img src="img/vertical.svg" alt="">
+                        <img width="35px" src="img/browse.svg" alt="">
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="nav">
+                <h2>Premium</h2>
+                <h2>Support</h2>
+                <h2>Download</h2>
+            </div>
+            <div class="function flex">
+                <button class="iapp">
+                    <img width="25px" src="img/install.svg" alt="">
+                    Install App
+                </button>
+                <button class="sin">Sign Up</button>
+                <button class="lin">Log in</button>
+            </div>
+        </div>
+    </div>
+    <div class="main flex">
+        <div class="playlist">
+            <div class="btns">
+                <div class="navbtns">
+                    <div class="respHome">
+                        <img class="invert" width="20px" src="img/home.svg" alt="" class="src">
+                        Home
+                    </div>
+                    <div class="respSearch">
+                        <img width="20px" src="img/search.svg" alt="" class="src">
+                        Search
+                    </div>
+                    <div class="respInstall">
+                        <img width="14px" src="img/install.svg" alt="">
+                        Install App
+                    </div>
+                </div>
+                <div class="close">
+                    <img class="invert" width="15px" src="img/close.svg" alt="">
+                </div>
+
+            </div>
+            <div class="playlistHead flex item-center">
+                <h2>Your Library</h2>
+                <button>
+                    <img class="invert" width="21px" src="img/plus.svg" alt="">
+                </button>
+            </div>
+            <div class="songList ">
+
+
+            </div>
+
+            <div class="footer flex">
+                <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span> </a></div>
+                <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp; Privacy
+                            Center</span></a></div>
+                <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+                <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+                <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+            </div>
+        </div>
+        <div class="songs">
+            <h1>Trending songs</h1>
+            <div class="cardContainer">
+            </div>
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+
+                <div class="abovePlaybar">
+                    <div class="songInfo">
+
+                    </div>
+                    <div class="playSongs flex content-center item-center">
+                        <img id="previous" class="prev" width="30px" src="img/previous.svg" alt="previous">
+                        <img id="play" class="playBtn" width="50px" src="img/playButton.svg" alt="play">
+                        <img id="next" class="next" width="30px" src="img/next.svg" alt="next">
+                    </div>
+                    <div class="timeVol">
+                        <div class="songTime">
+                            <span class="runTime">00 : 00</span>
+                            <span class="duration">/ 00 : 00</span>
+                        </div>
+                        <div class="volume">
+                            <img width="30px" src="img/volume.svg" alt="">
+                            <div class="range">
+                                <input class = "volSeekbar" type="range" name = "volume">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="hidden"></div>
+    <script src="Githubjs/script.js"></script>
+</body>
+
+</html>
