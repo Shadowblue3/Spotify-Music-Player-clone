@@ -10,6 +10,7 @@ function songFormat(index) {
         }
     }
     let s1 = tempSongs[index].split(`/${currFolder}/`)
+    console.log(tempSongs[index])
     let s2 = s1[1].split("/")
     let s3 = s2[0].replaceAll("%20", " ").replaceAll("%2C", ",")
 
