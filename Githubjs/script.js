@@ -146,7 +146,7 @@ async function displayAlbums() {
 }
 
 async function main() {
-    await getSongs("songs/Mixed")
+    await getSongs("tree/main/songs/Mixed")
     let s = songFormat(0)
 
     playMusic(s, true)
