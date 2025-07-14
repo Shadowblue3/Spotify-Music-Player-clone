@@ -1,4 +1,12 @@
 {
     "title" : "Mixed",
-    "description" : "Listen, feel and enjoy"
+    "description" : "Listen, feel and enjoy",
+    "songs": [
+        "Alote Alote Dhaka-Anupam Roy.mp3",
+        "Ekhon Anek Raat-Anupam Roy.mp3",
+        "Khnoro Aamar Fossil-Fossils.mp3",
+        "Sunn Raha Hai-Ankit Tiwari.mp3",
+        "Teri Deewani-Kailash Kher.mp3",
+        "Tujh Mein Rab Dikhta Hai-Roop Kumar Rathod.mp3"
+    ]
 }
