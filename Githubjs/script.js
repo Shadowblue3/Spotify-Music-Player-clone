@@ -146,7 +146,7 @@ async function displayAlbums() {
 }
 
 async function main() {
-    await getSongs("tree/main/songs/Mixed")
+    await getSongs("https://github.com/Shadowblue3/Spotify-Music-Player-clone/tree/main/songs/Mixed")
     let s = songFormat(0)
 
     playMusic(s, true)
